@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from typing import List, Set
 
 
 @dataclass
@@ -13,8 +14,8 @@ class Player:
     active: bool
 
     """intermediate data"""
-    opponents: set[int] = field(default_factory=set)
-    points_per_round: list[str] = field(default_factory=list)
+    opponents: Set[int] = field(default_factory=set)
+    points_per_round: List[str] = field(default_factory=list)
     score: int = 0
 
 
