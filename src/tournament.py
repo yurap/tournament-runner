@@ -1,9 +1,10 @@
 from .models import TournamentData, Match
 from dataclasses import dataclass
+from typing import List
 
 
 class PairingSystemInterface:
-    def generate_pairings(self) -> list[Match]:
+    def generate_pairings(self) -> List[Match]:
         pass
 
 
@@ -16,7 +17,7 @@ class TournamentOutputInterface:
     def standings(self, t: TournamentData):
         pass
 
-    def pairings(self, t: TournamentData, pairings: list[Match]):
+    def pairings(self, t: TournamentData, pairings: List[Match]):
         pass
 
 
