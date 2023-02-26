@@ -1,5 +1,5 @@
-from src.models import TournamentData, Match
-from src.tournament import PairingSystemInterface
+from .models import TournamentData, Match
+from .tournament import PairingSystemInterface
 from random import choice
 
 

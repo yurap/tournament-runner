@@ -1,4 +1,4 @@
-from src.models import TournamentData, Match
+from .models import TournamentData, Match
 from dataclasses import dataclass
 
 

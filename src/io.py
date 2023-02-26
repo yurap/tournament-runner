@@ -1,5 +1,5 @@
-from src.models import TournamentCreator, TournamentData, Match
-from src.tournament import TournamentInputInterface, TournamentOutputInterface
+from .models import TournamentCreator, TournamentData, Match
+from .tournament import TournamentInputInterface, TournamentOutputInterface
 
 
 class TournamentTextFileInput(TournamentInputInterface):
