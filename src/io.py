@@ -30,6 +30,8 @@ class TournamentTextFileInput(TournamentInputInterface):
             self.builder.next_round()
             for line in lines[1:]:
                 (_, p1, score, p2) = line.rstrip().split(self.separator)
+                # remove points
+                p1, p2 = p1.split('(')[0].rstrip(), p2.split('(')[0].rstrip()
                 self.builder.add_match(p1, score, p2)
 
 

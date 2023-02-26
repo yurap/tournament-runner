@@ -53,7 +53,7 @@ class TournamentData:
 
     def get_player_id(self, player_name):
         if player_name not in self.name_to_index:
-            raise PlayerNotRegisteredException()
+            raise PlayerNotRegisteredException(player_name)
         return self.name_to_index[player_name]
 
     def eval(self):
