@@ -59,4 +59,4 @@ def run(system, total_players, total_rounds, attempt, verbose=False):
 
 if __name__ == '__main__':
     for i in range(1000):
-        run(system=TournamentSwiss(verbose=False), total_players=20, total_rounds=17, attempt=i)
+        run(system=TournamentSwiss(verbose=False), total_players=10, total_rounds=6, attempt=i)

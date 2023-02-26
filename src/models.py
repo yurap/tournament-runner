@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Set
+from typing import List, Set, Dict
 
 
 @dataclass
@@ -41,9 +41,9 @@ class PlayerAlreadyRegisteredException(Exception):
 
 @dataclass
 class TournamentData:
-    name_to_index: dict[str, int] = field(default_factory=dict)
-    players: list[Player] = field(default_factory=list)
-    rounds: list[list[Match]] = field(default_factory=list)
+    name_to_index: Dict[str, int] = field(default_factory=dict)
+    players: List[Player] = field(default_factory=list)
+    rounds: List[List[Match]] = field(default_factory=list)
 
     def register(self, p: Player):
         """register a player and assign them an id"""
